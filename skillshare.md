@@ -10,15 +10,6 @@
 - run through common workflows
 - not get bogged down in specifics
 
-???
-
-!SLIDE
-@@@ js
-    function foo() {
-      return 'bar';
-    }
-@@@
-
 !SLIDE
 # What does Version Control do?
 - It allows you to "save" work and revert back to old versions.
@@ -85,6 +76,7 @@
 !SLIDE
 ## Getting code
   - what's github?
+  - `git clone`
   - `git pull`
   - `git fetch`
 
