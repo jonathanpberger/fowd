@@ -7,20 +7,7 @@
 
 !SLIDE
 # The Plan - 40m
-We'll jump-cut for each h2
-
-<!-- # v1
-## Git Solo
-- git init
-- git commit
-
-## Git Team
-- pull from repo
-- do some work
-- push
-
-## Heroku
-- deploy -->
+(We'll jump-cut for each h2)
 
 # Part 1 - Solo
 - git clone pivot-pong
@@ -41,8 +28,9 @@ We'll jump-cut for each h2
 ## Working w/ code
 Check out the work
 (status, log, but no gitx; we'll save the GUI for Part 2)  
-  - `git status`
-  - `git log`
+
+- `git status`
+- `git log`
 
 - push it to repo
 - deploy to new heroku instance
@@ -56,12 +44,6 @@ Check out the work
 - I want to work on top of those (git rebase)
 - if we were to do merge conflicts, they'd go here. but don't do them.
 
-<!-- !SLIDE
-## Working w/ Branches
-- I'll work in a branch, bc its experimental
-- push changes to branch
-  - `git branch` -->
-
 - push successfully.
 - deploy again to heroku
 
@@ -70,12 +52,12 @@ Check out the work
   - Git Immersion slides for setup
   - some Heroku setup: http://devcenter.heroku.com/articles/quickstart
 
-
 - some other fun stuff to check out (no time today)
   - git blame
   - resolving merge conflicts
   - git stash
-  
+  - rubygems
+  - the heroku gem
 
 # HINT: Use textexpander to change 'git ci' to 'git commit'
-
+# HINT: make a slide w/ links for ppl to photograph
