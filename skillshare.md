@@ -7,113 +7,72 @@
 
 !SLIDE
 # The Plan - 40m
-- run through common workflows
-- not get bogged down in specifics
+We'll jump-cut for each h2
 
-!SLIDE
-# What does Version Control do?
-- It allows you to "save" work and revert back to old versions.
-- It helps teams of people work on the same codebase without clobbering each others changes.
-- It also allows branching, to help people experiment safely.
+<!-- # v1
+## Git Solo
+- git init
+- git commit
 
-!SLIDE
-## Why do I want to use it?
-  - To **integrate** w/ teams and share work.
-  - To **create "savepoints"** to return to known-good states (like in a video game).
-  - To **experiment using branches** w/o disturbing the main line.
-  - To retain **access to old versions** of the software.
-  - To facilitate **sane workflow**.
+## Git Team
+- pull from repo
+- do some work
+- push
 
-!SLIDE
-# Why Git instead of another VCS?
-- Its awesome at branching.
-- Its fast and light: git tracks changesets instead of tracking content.
-- Its distributed, so you don't need to attach to the server (work on the plane).
+## Heroku
+- deploy -->
 
-!SLIDE
-# History of Git
-- Linus
-
-
-!SLIDE
-# How to install Git
-- Use Brew, not ports
-- Use GitX
-- setting up w/ gitconfig
-
-!SLIDE
-# Working Alone
-
-!SLIDE
-# Hello World with Git
-- start with `git init`
-
-!SLIDE
-## Working w/ code
-  - `git status`
-  - `git log`
-
-!SLIDE
-## Committing code: First commit
-  - `git add`
-  - `git commit`
-  - `git push`
-
-!SLIDE
-## Committing code: Second commit
-  - `git add`
-  - `git commit`
-  - `git push`
-
-!SLIDE
-## Staging and pushing
-  - `git remote`
-  - `git push`
-
-!SLIDE
-# Working with Others
+# Part 1 - Solo
+- git clone pivot-pong
 
 !SLIDE
 ## Getting code
   - what's github?
   - `git clone`
-  - `git pull`
-  - `git fetch`
 
 !SLIDE
+## Committing code: First commit
+- change some styling (git add, commit, push)
+  - `git add`
+  - `git commit`
+  - `git push`
+
+!SLIDE
+## Working w/ code
+Check out the work
+(status, log, but no gitx; we'll save the GUI for Part 2)  
+  - `git status`
+  - `git log`
+
+- push it to repo
+- deploy to new heroku instance
+
+# Part 2 - Team
+- my friend didn't like the styling, so he made his own changes
+- I want to work on top of those
+- do some work, git add, git ci, git push
+- oh noes! it breaks. conflict
+- What's going on? Let's check it out. Remember git log? Gitx is better.
+- I want to work on top of those (git rebase)
+- if we were to do merge conflicts, they'd go here. but don't do them.
+
+<!-- !SLIDE
 ## Working w/ Branches
-  - `git stash`
-  - `git branch`
+- I'll work in a branch, bc its experimental
+- push changes to branch
+  - `git branch` -->
 
-!SLIDE
-## Working w/ code 2: committing code with others
-  - `git checkout`
-  - `git blame`
-  - `git merge`
-  - `get rebase`
-
-!SLIDE
-## Reverting versions
-  - git co
+# Part 3 - Set-up
+- you've seen me do it; here's what you need to do:
+  - Git Immersion slide ____
+  - some Heroku setup
 
 
-!SLIDE
-## Multiple repositories
-  - git remote
+- some other fun stuff to check out (no time today)
+  - git blame
+  - resolving merge conflicts
+  - git reset HEAD^
+  - git stash
 
-!SLIDE
-# Typical Workflows
-## Starting a New Project
-  - git init
+# HINT: Use textexpander to change 'git ci' to 'git commit'
 
-!SLIDE
-## Joining an Existing Project
-  - git clone
-
-!SLIDE
-## Contributing Code
-  
-!SLIDE
-# Using the GUI
-- GitX
-- Github app?
