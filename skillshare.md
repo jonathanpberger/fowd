@@ -62,17 +62,20 @@ Check out the work
 - push changes to branch
   - `git branch` -->
 
+- push successfully.
+- deploy again to heroku
+
 # Part 3 - Set-up
 - you've seen me do it; here's what you need to do:
-  - Git Immersion slide ____
-  - some Heroku setup
+  - Git Immersion slides for setup
+  - some Heroku setup: http://devcenter.heroku.com/articles/quickstart
 
 
 - some other fun stuff to check out (no time today)
   - git blame
   - resolving merge conflicts
-  - git reset HEAD^
   - git stash
+  
 
 # HINT: Use textexpander to change 'git ci' to 'git commit'
 
