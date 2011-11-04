@@ -1,5 +1,15 @@
 !SLIDE
-# Code Management for Designers
+Welcome to
+# Code Management
+# for Designers
+Future of Web Design, NYC
+November 2011
+
+!SLIDE
+# Hi!
+
+- I'm jonathanpberger
+- I make stuff
 
 !SLIDE
 # What it says on the tin
@@ -7,112 +17,93 @@
 
 !SLIDE
 # The Plan - 40m
-- 5m What / Why / How
-  - Git
-  - Heroku
-  
-- 20m Basic git workflow
-- 10m Basic heroku workflow
-- 5m Wrap-up
+
+I'm going to tell a story about ping pong.
+
+- Act 1 - Solo Git
+- Act 2 - Team Git
+- Act 3 - Setting-up
+
+NB: The codebase will jump-cut for each Act.
 
 !SLIDE
-@@@ js
-    function foo() {
-      return 'bar';
-    }
-@@@
+# Act 1 - Solo Git
+- `git clone pivot-pong`
 
 !SLIDE
-# Why should I use version control?
-## What is version control?
-## Why do I want to use it?
-  - **integrate** w/ teams and share work
-  - **create "savepoints"** to return to known-good states (like in a video game)
-  - **experiment using branches** w/o disturbing the main line
-  - retain **access to old versions** of the software
-  - to facilitate **sane workflow**
-  
-  maintains separate “production” versions of code that are always deployable
-  allows simultaneous development of different features on the same codebase
-  keeps track of all old versions of files
-  prevents work being overwritten  
-
-!SLIDE  
-## What do designers do instead?
-  - binary files are harder to diff
-  - text is easy to diff
-  - Adobe VersionCue is an attempt
-  - Layer Vault (new online app)
-  - Dropbox
-  - arcane filenaming schemes
-
-!SLIDE
-# Why Git is good for Designers
-- Git allows you to "save" work and revert back to old versions.
-- It helps teams of people work on the same codebase without clobbering each others changes.
-- It also allows branching, to help people experiment safely.
-
-!SLIDE
-# Cool things you can do with Git
-- Its awesome at branching
-- Its fast and light: git tracks changesets instead of tracking content
-- Its distributed, so you don't need to attach to the server (work on the plane)
-
-!SLIDE
-# How to install Git
-- Use Brew, not ports
-- Use GitX
-- setting up w/ gitconfig
-
-
-# Using Git
-
 ## Getting code
-  - git pull
-  - git fetch
+  - what's github?
+  - `git clone`
 
+!SLIDE
+## Committing code: First commit
+- change some styling (git add, commit, push)
+  - `git add`
+  - `git commit`
+  - `git push`
+
+!SLIDE
 ## Working w/ code
-  - git checkout
-  - git status
-  - git log
+Check out the work
+(status, log, but no gitx; we'll save the GUI for Part 2)  
 
-## Working w/ Branches
-  - git stash
-  - git branch
+- `git status`
+- `git log`
 
-## Working w/ code 2: committing code with others
-  - git blame
-  - git merge
-  - get rebase
+- `git push origin master`: push it to repo
 
-## Reverting versions
-  - git co
 
-## Committing code
-  - git add
-  - git commit
-  - git push
+!SLIDE
+## Deploying w/ Heroku
+- `gem install heroku`
+- `git heroku create`
 
-## Multiple repositories
-  - git remote
+- `git push heroku master`: deploy to new heroku instance
 
-# Typical Workflows
-## Starting a New Project
-  - git init
+!SLIDE
+# Act 2 - Team Git
+- My friend didn't like the styling, so he made his own changes.
+- I want to work on top of those.
+- Do some work, git add, git ci, git push.
 
-## Joining an Existing Project
-  - git clone
+!SLIDE
 
-## Contributing Code
-  
-# Using the GUI
-- GitX
-- Github app?
+- Oh noes! It breaks. Conflict!
+- What's going on? Let's check it out. Remember git log? Gitx is better.
+- I want to work on top of those (git rebase)
+- If we were to do merge conflicts, they'd go here. but don't do them.
 
-# Deploying with Heroku
-- Why Heroku?
-  - Integrates seamlessly w/ Git workflow
-  - free for small sites
-  - great for experimenting w/ ideas
+!SLIDE
 
-# Publishing a Quick demo blog app
+- Push successfully.
+- Deploy again to Heroku.
+
+!SLIDE
+# Act 3 - Set-up
+- You've seen me do it; here's what you need to do:
+  - Git Immersion slides for setup
+  - some Heroku setup: http://devcenter.heroku.com/articles/quickstart
+
+- Some other fun stuff to check out (no time today):
+  - `git blame`
+  - `git stash`
+  - resolving merge conflicts
+  - rubygems
+  - the heroku gem
+
+!SLIDE
+# Thanks!
+
+!SLIDE
+# How to find me
+- jonathanpberger.com
+- @jonathanpberger
+- github, gmail, forrst, etc...
+
+!SLIDE
+# Links:
+
+
+!SLIDE
+# HINT: Use textexpander to change 'git ci' to 'git commit'
+# HINT: make a slide w/ links for ppl to photograph
