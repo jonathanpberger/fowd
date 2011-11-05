@@ -1,0 +1,142 @@
+/*///////////////////////
+
+JPB doing a real rough tune-up of pivot pong styling to make it a little more A17-y
+
+///////////////////////*/
+
+body {
+  font: 14px/22px Helvetica, Arial, sans-serif;
+  color: #1F1C1C;
+}
+
+body h1 {
+  font-size: 36px;
+  margin: 10px 0;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+h2 {
+  float: left;
+  margin-right: 10px;
+  
+}
+
+#feature {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+  border-bottom: 1px solid #E0E1E2;
+	overflow: hidden;
+	width: 100%;
+	font-weight: normal;
+}
+
+#feature h1 {
+  font-size: 48px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+nav {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+  border-bottom: 1px solid #E0E1E2;
+  
+  
+}
+
+nav a {
+  display: block;
+  margin-top: 20px;
+}
+
+body ol {
+  margin: 20px auto;
+  width: 550px;
+}
+
+body li {
+  padding: 5px 25px;
+  width: 500px;
+  list-style-position: inside;
+}
+
+body li, body td {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+body table {
+  table-layout: fixed;
+  margin: 10px 0px;
+  width: 550px;
+}
+
+body tr {
+  height: 20px;
+}
+
+body th, body td {
+  padding: 2px 5px;
+  vertical-align: middle;
+}
+
+body th {
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+}
+
+body td {
+  width: 200px;
+}
+
+body form {
+  margin: 10px 0;
+}
+
+body input[type='text'] {
+  font-size: 24px;
+  display: block;
+  width: 100%;
+}
+
+td.date, th.date {
+  width: 100px;
+  text-align: center;
+}
+
+td.action, th.action {
+  font-size: 12px;
+  width: 50px;
+  text-align: center;
+}
+
+#page {
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  width: 600px;
+}
+
+#content {
+  padding: 25px;
+  background-color: #fff;
+}
+
+.even {
+  background-color: #fff;
+}
+
+.odd {
+  background-color: #F6F7F2;
+}
+
+a.source {
+  font-size: 12px;
+  float: right;
+}
