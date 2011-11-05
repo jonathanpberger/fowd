@@ -1,15 +1,16 @@
 !SLIDE
-Welcome to
+> Welcome to
 # Code Management
 # for Designers
-Future of Web Design, NYC
-November 2011
+> Future of Web Design, NYC
+> November 2011
 
 !SLIDE
 # Hi!
 
-- I'm jonathanpberger
-- I make stuff
+- I'm @jonathanpberger
+- I make stuff at @pivotallabs
+- I'm growing a mustache for charity
 
 !SLIDE
 # What it says on the tin
@@ -24,6 +25,7 @@ I'm going to tell a story about ping pong.
 - Act 2 - Team Git
 - Act 3 - Setting-up
 
+This will be a live-coded technical talk.
 NB: The codebase will jump-cut for each Act.
 
 !SLIDE
@@ -62,9 +64,24 @@ Check out the work
 
 !SLIDE
 # Act 2 - Team Git
+
+In which the A17 House Style is applied.
+
 - My friend didn't like the styling, so he made his own changes.
 - I want to work on top of those.
-- Do some work, git add, git ci, git push.
+
+!SLIDE
+## Mr. Fakeypants Goes to Work
+Mr. Fakeypants does: 
+
+- `git pull` # he gets my codebase
+- Makes changes and commits them (`git add`, `git ci`)
+- `git push origin master`
+
+!SLIDE
+## I do some more work
+- Makes changes and commits them (`git add`, `git ci`)
+- `git push origin master`
 
 !SLIDE
 
