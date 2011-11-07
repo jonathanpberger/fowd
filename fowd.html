@@ -4867,105 +4867,247 @@ jQuery.extend( jQuery.easing,
         
           <div class="">
             <div id="slide-0" class="content">
-              <p>Welcome to</p><h1>Code Management</h1><h1>for Designers</h1><p>Future of Web Design, NYC
+              <blockquote>
+<p>Welcome to</p>
+
+<h1>Code Management</h1>
+
+<h1>for Designers</h1>
+
+<p>Future of Web Design, NYC
 November 2011</p>
+</blockquote>
             </div>
           </div>
         
           <div class="">
             <div id="slide-1" class="content">
               <h1>Hi!</h1><ul>
-<li>I'm jonathanpberger</li>
-<li>I make stuff</li>
+<li>I'm @jonathanpberger</li>
+<li>I make stuff at @pivotallabs</li>
+<li>I'm growing a mustache for charity</li>
 </ul>
             </div>
           </div>
         
           <div class="">
             <div id="slide-2" class="content">
-              <h1>What it says on the tin</h1><blockquote><p>Become a more powerful designer by learning how to deploy your sites with Git and cloud hosting solutions like Heroku.</p></blockquote>
+              <h1>What it says on the tin</h1><blockquote><p>"Become a more powerful designer by learning how to deploy your sites with Git and cloud hosting solutions like Heroku."</p></blockquote>
             </div>
           </div>
         
           <div class="">
             <div id="slide-3" class="content">
-              <h1>The Plan - 40m</h1><p>I'm going to tell a story about ping pong.</p><ul>
-<li>Act 1 - Solo Git</li>
-<li>Act 2 - Team Git</li>
-<li>Act 3 - Setting-up</li>
+              <h1>The Plan</h1><ul>
+<li>40m to Speed through a <em>ton</em> of material.</li>
+<li>Try to show actual use and common workflows. No time to be exhaustive</li>
+<li>This will be a live-coded technical talk.</li>
 </ul>
-<p>NB: The codebase will jump-cut for each Act.</p>
             </div>
           </div>
         
           <div class="">
             <div id="slide-4" class="content">
-              <h1>Act 1 - Solo Git</h1><ul>
-<li><code>git clone pivot-pong</code></li>
+              <ul>
+<li>Act 1 - Solo Git &amp; Heroku</li>
+<li>Act 2 - Team Git</li>
+<li>Act 3 - Setting-up, links to more</li>
+<li>I'm going to tell a story about <a href="http://www.pivotpong.com">ping pong</a>.</li>
 </ul>
             </div>
           </div>
         
           <div class="">
             <div id="slide-5" class="content">
-              <h2>Getting code</h2><ul>
-<li>what's github?</li>
-<li><code>git clone</code></li>
-</ul>
+              <h1>Act 1 - Solo Git</h1><p>Copy an Open Source project for use.</p>
             </div>
           </div>
         
           <div class="">
             <div id="slide-6" class="content">
-              <h2>Committing code: First commit</h2><ul>
-<li>change some styling (git add, commit, push)
-
-<ul>
-<li><code>git add</code></li>
-<li><code>git commit</code></li>
-<li><code>git push</code></li>
-</ul>
-</li>
-</ul>
+              <h2>Using Github</h2><blockquote><p><a href="http://www.github.com">Github.com</a> is a web-based hosting service for projects that use the Git revision control system.</p></blockquote>
             </div>
           </div>
         
           <div class="">
             <div id="slide-7" class="content">
-              <h2>Working w/ code</h2><p>Check out the work
-(status, log, but no gitx; we'll save the GUI for Part 2)</p><ul>
-<li><code>git status</code></li>
-<li><p><code>git log</code></p></li>
-<li><p><code>git push origin master</code>: push it to repo</p></li>
-<li>
-<code>git push heroku master</code>: deploy to new heroku instance</li>
+              <h2>Copying a project with Git Clone</h2><ul>
+<li>First we'll fork the <a href="https://github.com/seanmoon/pivot-pong">Pivot Pong</a> project.</li>
+<li>Then we'll take our fork and <code>git clone pivot-pong</code>.</li>
 </ul>
             </div>
           </div>
         
           <div class="">
             <div id="slide-8" class="content">
-              <h1>Act 2 - Team Git</h1><ul>
-<li>My friend didn't like the styling, so he made his own changes.</li>
-<li>I want to work on top of those.</li>
-<li>Do some work, git add, git ci, git push.</li>
-</ul>
+              <p><img src="images/git-clone.png" title="Git clone diagram." alt='"Git clone diagram."'></p>
             </div>
           </div>
         
           <div class="">
             <div id="slide-9" class="content">
-              <ul>
-<li>Oh noes! It breaks. Conflict!</li>
-<li>What's going on? Let's check it out. Remember git log? Gitx is better.</li>
-<li>I want to work on top of those (git rebase)</li>
-<li>If we were to do merge conflicts, they'd go here. but don't do them.</li>
+              <h2>Making an edit</h2><ul>
+<li>Let's change the name of the app.</li>
 </ul>
             </div>
           </div>
         
           <div class="">
             <div id="slide-10" class="content">
+              <p><img src="images/edit-file.png" alt='"Editing a file."'></p>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-11" class="content">
+              <h2>Seeing what changed</h2><ul>
+<li><code>git status</code></li>
+<li><code>git diff</code></li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-12" class="content">
+              <h2>Commiting Changes</h2><ul>
+<li><code>git commit -am</code></li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-13" class="content">
+              <p><img src="images/git-staging.png" title="Git staging diagram." alt='"Git staging diagram."'></p>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-14" class="content">
+              <h2>Distributed VCS</h2><ul>
+<li>This works if you're on the airplane(!)</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-15" class="content">
+              <h2>Pushing code to the Repo</h2><ul>
+<li><code>git status</code></li>
+<li><code>git log</code></li>
+<li><code>git push origin master</code></li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-16" class="content">
+              <p><img src="images/git-push.png" alt='"Pushing a commit to the repo."'></p>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-17" class="content">
+              <h2>Let's try another</h2><ul>
+<li>Let's try running the app.</li>
+<li>Change the db.</li>
+<li>Change the styling.</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-18" class="content">
+              <h2>Staging multiple files</h2><ul>
+<li>Each commit should be a unit of work.</li>
+<li>This isn't always a single file or single line.</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-19" class="content">
+              <p><img src="images/git-stage-many.png" alt='"Pushing multiple commits."'></p>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-20" class="content">
+              <h2>Deploying to the Web</h2>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-21" class="content">
+              <blockquote><p>"<a href="http://www.heroku.com">Heroku</a> is a cloud application platform...[that] lets app developers spend 100% of their time on their application code, not managing servers, deployment, ongoing operations, or scaling."</p></blockquote>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-22" class="content">
+              <h2>Deploying with Heroku</h2><ul>
+<li><code>heroku create</code></li>
+<li>
+<code>git push heroku master</code>: deploy to new heroku instance</li>
+<li><code>heroku rename</code></li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-23" class="content">
+              <h1>Act 2 - Team Git</h1>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-24" class="content">
+              <h2>In which the A17 House Style is applied.</h2><ul>
+<li>My friend, Mr. FakeyPants didn't like the styling, so he made his own changes.</li>
+<li>I'll set him up as a collaborator on the site.</li>
+<li>I want to work on top of those.</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-25" class="content">
+              <h2>Mr. Fakeypants Goes to Work</h2><p>Mr. Fakeypants does:</p><ul>
+<li>In real life, he'd <code>git clone</code>, edit, <code>git commit</code>, <code>git push</code>, etc.</li>
+<li>For the purposes of this demo, we'll use GitHub's live edtiing feature.</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-26" class="content">
+              <h2>I do some more work</h2><ul>
+<li>Makes changes and commits them (<code>git add</code>, <code>git ci</code>)</li>
+<li><code>git push origin master</code></li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-27" class="content">
+              <p>Oh noes! It breaks. Conflict!</p>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-28" class="content">
+              <ul>
+<li>I want to work on top of his changes</li>
+<li>First I have to <code>git rebase</code>
+</li>
+<li>
+<strong>Now</strong> I can <code>git push</code>
+</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-29" class="content">
               <ul>
 <li>Push successfully.</li>
 <li>Deploy again to Heroku.</li>
@@ -4974,14 +5116,16 @@ November 2011</p>
           </div>
         
           <div class="">
-            <div id="slide-11" class="content">
+            <div id="slide-30" class="content">
               <h1>Act 3 - Set-up</h1><ul>
 <li>
 <p>You've seen me do it; here's what you need to do:</p>
 
 <ul>
 <li>Git Immersion slides for setup</li>
+<li>Github setup</li>
 <li>some Heroku setup: http://devcenter.heroku.com/articles/quickstart</li>
+<li><code>gem install heroku</code></li>
 </ul>
 </li>
 <li>
@@ -5000,13 +5144,13 @@ November 2011</p>
           </div>
         
           <div class="">
-            <div id="slide-12" class="content">
+            <div id="slide-31" class="content">
               <h1>Thanks!</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-13" class="content">
+            <div id="slide-32" class="content">
               <h1>How to find me</h1><ul>
 <li>jonathanpberger.com</li>
 <li>@jonathanpberger</li>
@@ -5016,13 +5160,13 @@ November 2011</p>
           </div>
         
           <div class="">
-            <div id="slide-14" class="content">
+            <div id="slide-33" class="content">
               <h1>Links:</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-15" class="content">
+            <div id="slide-34" class="content">
               <h1>HINT: Use textexpander to change 'git ci' to 'git commit'</h1><h1>HINT: make a slide w/ links for ppl to photograph</h1>
             </div>
           </div>

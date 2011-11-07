@@ -14,69 +14,113 @@
 
 !SLIDE
 # What it says on the tin
-> Become a more powerful designer by learning how to deploy your sites with Git and cloud hosting solutions like Heroku.
+> "Become a more powerful designer by learning how to deploy your sites with Git and cloud hosting solutions like Heroku."
 
 !SLIDE
-# The Plan - 40m
+# The Plan
+- 40m to Speed through a *ton* of material.
+- Try to show actual use and common workflows. No time to be exhaustive
+- This will be a live-coded technical talk.
 
-I'm going to tell a story about ping pong.
+!SLIDE
 
-- Act 1 - Solo Git
+- Act 1 - Solo Git & Heroku
 - Act 2 - Team Git
-- Act 3 - Setting-up
-
-This will be a live-coded technical talk.
-NB: The codebase will jump-cut for each Act.
+- Act 3 - Setting-up, links to more
+- I'm going to tell a story about [ping pong](http://www.pivotpong.com).
 
 !SLIDE
 # Act 1 - Solo Git
-- `git clone pivot-pong`
+Copy an Open Source project for use.
 
 !SLIDE
-## Getting code
-  - what's github?
-  - `git clone`
+## Using Github
+> [Github.com](http://www.github.com) is a web-based hosting service for projects that use the Git revision control system.
 
 !SLIDE
-## Committing code: First commit
-- change some styling (git add, commit, push)
-  - `git add`
-  - `git commit`
-  - `git push`
+## Copying a project with Git Clone
+- First we'll fork the [Pivot Pong](https://github.com/seanmoon/pivot-pong) project.
+- Then we'll take our fork and `git clone pivot-pong`.
 
 !SLIDE
-## Working w/ code
-Check out the work
-(status, log, but no gitx; we'll save the GUI for Part 2)  
+!["Git clone diagram."](images/git-clone.png "Git clone diagram.")
 
+!SLIDE
+## Making an edit
+- Let's change the name of the app.
+
+!SLIDE
+!["Editing a file."](images/edit-file.png)
+
+!SLIDE
+## Seeing what changed
+- `git status`
+- `git diff`
+
+!SLIDE
+## Commiting Changes
+- `git commit -am`
+
+!SLIDE
+!["Git staging diagram."](images/git-staging.png "Git staging diagram.")
+
+!SLIDE
+## Distributed VCS
+- This works if you're on the airplane(!)
+
+!SLIDE
+## Pushing code to the Repo
 - `git status`
 - `git log`
+- `git push origin master`
 
-- `git push origin master`: push it to repo
+!SLIDE
+!["Pushing a commit to the repo."](images/git-push.png)
 
 
 !SLIDE
-## Deploying w/ Heroku
-- `gem install heroku`
-- `git heroku create`
+## Let's try another
+- Let's try running the app.
+- Change the db.
+- Change the styling.
 
+!SLIDE
+## Staging multiple files
+- Let's use the GUI: GitX
+- Each commit should be a unit of work.
+- This isn't always a single file or single line.
+
+!SLIDE
+!["Pushing multiple commits."](images/git-stage-many.png)
+
+!SLIDE
+## Deploying to the Web
+
+!SLIDE
+> "[Heroku](http://www.heroku.com) is a cloud application platform...[that] lets app developers spend 100% of their time on their application code, not managing servers, deployment, ongoing operations, or scaling."
+
+!SLIDE
+## Deploying with Heroku
+- `heroku create`
 - `git push heroku master`: deploy to new heroku instance
+- `heroku rename`
 
 !SLIDE
 # Act 2 - Team Git
 
-In which the A17 House Style is applied.
+!SLIDE
+## In which the A17 House Style is applied.
 
-- My friend didn't like the styling, so he made his own changes.
+- My friend, Mr. FakeyPants didn't like the styling, so he made his own changes.
+- I'll set him up as a collaborator on the site.
 - I want to work on top of those.
 
 !SLIDE
 ## Mr. Fakeypants Goes to Work
 Mr. Fakeypants does: 
 
-- `git pull` # he gets my codebase
-- Makes changes and commits them (`git add`, `git ci`)
-- `git push origin master`
+- In real life, he'd `git clone`, edit, `git commit`, `git push`, etc.
+- For the purposes of this demo, we'll use GitHub's live edtiing feature.
 
 !SLIDE
 ## I do some more work
@@ -84,11 +128,13 @@ Mr. Fakeypants does:
 - `git push origin master`
 
 !SLIDE
+Oh noes! It breaks. Conflict!
 
-- Oh noes! It breaks. Conflict!
-- What's going on? Let's check it out. Remember git log? Gitx is better.
-- I want to work on top of those (git rebase)
-- If we were to do merge conflicts, they'd go here. but don't do them.
+!SLIDE
+
+- I want to work on top of his changes
+- First I have to `git rebase`
+- **Now** I can `git push`
 
 !SLIDE
 
@@ -96,31 +142,64 @@ Mr. Fakeypants does:
 - Deploy again to Heroku.
 
 !SLIDE
-# Act 3 - Set-up
-- You've seen me do it; here's what you need to do:
-  - Git Immersion slides for setup
-  - some Heroku setup: http://devcenter.heroku.com/articles/quickstart
+# Act 3 - Setting-up
 
-- Some other fun stuff to check out (no time today):
-  - `git blame`
-  - `git stash`
-  - resolving merge conflicts
-  - rubygems
-  - the heroku gem
+!SLIDE
+# Trying this at home
+You've seen me do it; here's what you need to do:
+
+- To use git: Install Git on your machine using Homebrew.
+- To backup and share: create a Github account, set up a remote repo
+- To deploy to the web: set up a Heroku account
+- Install `gem install heroku` to make deploying easier
+
+!SLIDE
+# The Links Slide:
+- Install git using Brew **http://mxcl.github.com/homebrew/**
+- Practice git basics with **http://gitimmersion.com/**
+- Set up a Github account at **http://help.github.com/mac-set-up-git/**
+- Set up a Heroku account at **http://devcenter.heroku.com/articles/quickstart**
+- Use the Heroku Gem to make life easier at **https://github.com/heroku/heroku**
+- My preferred "Brother Bard" Gitx branch at **https://github.com/brotherbard/gitx/downloads**
+- GitX's page at **http://gitx.frim.nl/**
+
+!SLIDE
+## Some other fun stuff to explore:
+This is intermediate git that I use every day:
+
+- `git branch`
+- `git blame`
+- `git stash`
+- `git reset HEAD^`
+- resolving merge conflicts
+- rubygems
+
+!SLIDE
+# For more info
+- http://jonathanpberger.com/code_management
+- Say hi at `@jonathanpberger`
+- or `jonathanpberger` on github, gmail, forrst, etc...
 
 !SLIDE
 # Thanks!
 
 !SLIDE
-# How to find me
-- jonathanpberger.com
-- @jonathanpberger
-- github, gmail, forrst, etc...
+## Experiment safely
+- `git branch`
 
 !SLIDE
-# Links:
-
+## Attribute changes to someone
+- `git blame`
 
 !SLIDE
-# HINT: Use textexpander to change 'git ci' to 'git commit'
-# HINT: make a slide w/ links for ppl to photograph
+## Quickly get back to a clean state
+- `git stash`
+
+!SLIDE
+## Unstage your last few commits
+- `git reset HEAD^`
+
+!SLIDE
+## resolving merge conflicts
+- `git rebase --continue`
+
