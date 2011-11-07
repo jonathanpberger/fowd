@@ -1,0 +1,206 @@
+/* @override http://pivotpong.com/stylesheets/pong.css?1311894486 */
+
+body {
+	font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body > * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h3 {
+  margin: 10px 0;
+}
+h1 {
+	display: block;
+	float: left;
+	width: 112px;
+	height: 70px;
+	font-size: 1px;
+	color: #fff;
+background: url(http://studio.area17.com/config/themes/default/images/logos/A17-studio-logo.png);
+	margin: 0;
+	
+}
+header nav {
+	margin-top: 62px;
+	float: right;
+}
+nav a, div.tabs a {
+	padding: 10px;
+	margin: 0;
+	margin-left: -3px;
+}
+nav a:first-child {
+	border-right: 1px #ccc solid;
+}
+
+div.tabs ul {
+	margin-bottom: 11px;
+	}
+div.tabs,
+form#new_match {
+	clear: both;
+	margin-top: 85px;
+	background: url(http://www.area17.com/images/checker_grey.png) repeat-x;
+	padding-top: 31px;
+}
+div.tabs a {
+	border-right: 1px #ccc solid;
+	margin-left: -3px;
+}
+div.tabs li:last-child a {
+	border-right: none;
+}
+
+a {
+  text-decoration: none;
+  color: #346B9E;
+}
+a:hover {
+	text-decoration: underline;
+}
+footer a {
+	margin-top: -20px;
+	padding: 10px;
+	border-left: 1px #ccc solid;
+}
+a.current {
+	background-color: yellow;
+/*
+  color: #eee;
+  background-color: #c50;
+  padding-left: 3px;
+  padding-right: 3px;
+ */
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header nav {
+  margin-left: 10px;
+  vertical-align: 4px;
+}
+
+
+footer {
+}
+
+footer a {
+  float: right;
+}
+
+ol,
+table {
+	border-top: 1px #ccc solid;
+	border-bottom: 1px #ccc solid;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+table {
+	width: 100%;
+}
+
+li {
+  padding: 20px;
+  list-style-position: inside;
+}
+ul.tab-bar li {
+	padding: 0;
+}
+
+li, td {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+table {
+  table-layout: fixed;
+}
+
+tr {
+  height: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+}
+
+td {
+  width: 200px;
+}
+
+form {
+  margin: 10px 0;
+}
+
+input[type='text'] {
+  font-size: 24px;
+  display: block;
+  width: 100%;
+}
+
+td.date, th.date {
+  width: 100px;
+}
+
+td.action, th.action {
+  font-size: 12px;
+  width: 50px;
+  text-align: center;
+}
+
+#page {
+  margin-left: auto;
+  margin-right: auto;
+/*
+  width: 600px;
+*/
+  padding: 25px;
+}
+
+.even {
+
+}
+
+.odd {
+  background-color: #F6F7F2;
+}
+
+.tabs {
+  margin-top: 20px;
+}
+
+.tab-bar {
+  list-style-type: none;
+}
+
+.tab-bar li {
+  display: inline;
+}
+
+.flash {
+  margin-bottom: 10px;
+}
+
+.flash .alert {
+  color: red;
+}
+
+.flash .notice {
+  color: green;
+}

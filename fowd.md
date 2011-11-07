@@ -6,15 +6,24 @@
 > November 2011
 
 !SLIDE
+# What it says on the tin
+> "Become a more powerful designer by learning how to deploy your sites with Git and cloud hosting solutions like Heroku."
+
+!SLIDE
 # Hi!
 
 - I'm @jonathanpberger
-- I make stuff at @pivotallabs
-- I'm growing a mustache for charity
+- I use Git every day to make stuff at @pivotallabs
+- My background is in philosophy and then design and now development
 
 !SLIDE
-# What it says on the tin
-> "Become a more powerful designer by learning how to deploy your sites with Git and cloud hosting solutions like Heroku."
+## Who are you?
+Show of hands:
+
+- Who's used any version control before?
+- Who's used git before?
+- Who uses the terminal regularly?
+
 
 !SLIDE
 # The Plan
@@ -27,7 +36,9 @@
 - Act 1 - Solo Git & Heroku
 - Act 2 - Team Git
 - Act 3 - Setting-up, links to more
-- I'm going to tell a story about [ping pong](http://www.pivotpong.com).
+
+!SLIDE
+## I'm going to tell a story about [ping pong](http://pivotpong.com/).
 
 !SLIDE
 # Act 1 - Solo Git
@@ -62,11 +73,11 @@ Copy an Open Source project for use.
 - `git commit -am`
 
 !SLIDE
-!["Git staging diagram."](images/git-staging.png "Git staging diagram.")
+!["Git commit."](images/git-commit.png "Git commit packages up your changeset.")
 
 !SLIDE
 ## Distributed VCS
-- This works if you're on the airplane(!)
+- This works even if when you're offline(!)
 
 !SLIDE
 ## Pushing code to the Repo
@@ -75,8 +86,7 @@ Copy an Open Source project for use.
 - `git push origin master`
 
 !SLIDE
-!["Pushing a commit to the repo."](images/git-push.png)
-
+!["Git staging diagram."](images/git-staging.png "Git staging diagram.")
 
 !SLIDE
 ## Let's try another
@@ -104,6 +114,10 @@ Copy an Open Source project for use.
 - `heroku create`
 - `git push heroku master`: deploy to new heroku instance
 - `heroku rename`
+
+!SLIDE
+!["Deploying to Heroku."](images/deploy-to-heroku.png)
+
 
 !SLIDE
 # Act 2 - Team Git
@@ -155,24 +169,22 @@ You've seen me do it; here's what you need to do:
 
 !SLIDE
 # The Links Slide:
-- Install git using Brew **http://mxcl.github.com/homebrew/**
-- Practice git basics with **http://gitimmersion.com/**
-- Set up a Github account at **http://help.github.com/mac-set-up-git/**
-- Set up a Heroku account at **http://devcenter.heroku.com/articles/quickstart**
-- Use the Heroku Gem to make life easier at **https://github.com/heroku/heroku**
-- My preferred "Brother Bard" Gitx branch at **https://github.com/brotherbard/gitx/downloads**
-- GitX's page at **http://gitx.frim.nl/**
+- GitX, the Mac git GUI at <http://gitx.frim.nl/>
+- My preferred "Brother Bard" Gitx branch at <https://github.com/brotherbard/gitx/downloads>
+- Install git using Brew <http://mxcl.github.com/homebrew/>
+- Practice git basics with <http://gitimmersion.com/>
+- Set up a Github account at <http://help.github.com/mac-set-up-git/>
+- Set up a Heroku account at <http://devcenter.heroku.com/articles/quickstart>
+- Use the Heroku Gem to make life easier at <https://github.com/heroku/heroku>
 
 !SLIDE
 ## Some other fun stuff to explore:
 This is intermediate git that I use every day:
 
 - `git branch`
-- `git blame`
 - `git stash`
 - `git reset HEAD^`
-- resolving merge conflicts
-- rubygems
+- `git blame`
 
 !SLIDE
 # For more info
@@ -200,6 +212,4 @@ This is intermediate git that I use every day:
 - `git reset HEAD^`
 
 !SLIDE
-## resolving merge conflicts
-- `git rebase --continue`
-
+# Thanks again!
